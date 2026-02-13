@@ -1,0 +1,102 @@
+/**
+ * Typography & Layout
+ */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.5em;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Red Hat Mono", monospace;
+  color: #E8E6E3;
+}
+a {
+  font-weight: normal;
+  text-decoration: none;
+  color: #8B7355;
+}
+a:hover {
+  color: #A08060;
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300;
+  text-transform: lowercase;
+}
+h1 { font-size: 3.6rem; }
+h2 { font-size: 3.0rem; }
+h3 { font-size: 2.4rem; }
+p {
+  margin: 0 auto 1.5em auto;
+}
+
+html, #container, .inner { background-color: transparent; }
+html { background: #f5f0e8; }
+body {
+  max-width: 800px;
+  margin: 25px auto;
+}
+header, #content, footer {
+  padding: 25px;
+  color: #3d3832;
+  text-align: center;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header h1 {
+  text-align: center;
+  text-transform: capitalize;
+  display: inline-block;
+  background: rgba(196, 165, 116, 0.3);
+  padding: 0 0.3em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  box-shadow: 0 0 20px 10px rgba(196, 165, 116, 0.2);
+}
+.body-content p { margin-bottom: 1em; }
+.body-content p:last-child { margin-bottom: 0; }
+.projects-section { margin-top: 4rem; }
+#content h2 {
+  text-align: center;
+  margin-top: 0;
+  display: inline-block;
+  background: rgba(196, 165, 116, 0.3);
+  padding: 0 0.3em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  box-shadow: 0 0 20px 10px rgba(196, 165, 116, 0.2);
+}
+#content p {
+  display: inline-block;
+  width: fit-content;
+  max-width: 100%;
+  background: rgba(245, 240, 232, 0.85);
+  padding: 0 0.2em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  box-shadow: 0 0 20px 10px rgba(196, 165, 116, 0.15);
+  margin-bottom: 1em;
+}
+.projects {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  justify-items: center;
+}
+.project {
+  width: 100%;
+  max-width: 320px;
+  background: rgba(245, 240, 232, 0.85);
+  padding: 1.5rem;
+  box-shadow: 0 0 20px 10px rgba(196, 165, 116, 0.15);
+  text-align: center;
+}
+.project h3 { margin-top: 0; margin-bottom: 0.5rem; }
+.project p { margin-bottom: 0; }

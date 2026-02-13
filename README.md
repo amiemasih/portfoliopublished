@@ -1,3 +1,19 @@
+# Portfolio Template
+
+## Development (Svelte + D3)
+
+The network visualization uses **Svelte** and **D3** with **Canvas rendering** for smooth, lag-free animation.
+
+```bash
+npm install
+npm run dev      # Start dev server at localhost:5173
+npm run build    # Build for production (output in dist/)
+```
+
+For GitHub Pages, deploy the contents of the `dist/` folder.
+
+---
+
 # Simple Website Using Github Pages
 Make a simple HTML website and publish it using Github Pages.  
 View example: https://zirafa.github.io/simple-website-template/
