@@ -60,21 +60,6 @@
               </div>
             </article>
             <article class="project">
-              <h3 class="title-case">Focus Enhancement App</h3>
-              <p>
-                Explore a UI/UX prototype designed in Figma for a focus enhancement app grounded in behavioral psychology. This project explores how cognitive load, habit formation, and attention cues can be translated into thoughtful interface design to support sustained focus. Through intentional layout, interaction patterns, and feedback loops, the prototype aims to reduce distraction and encourage healthier productivity behaviors.
-              </p>
-              <a href="https://item-bleak-77544513.figma.site/" target="_blank" rel="noopener noreferrer" class="project-link">View project →</a>
-              <div class="preview-wrapper">
-                <iframe
-                  use:lazyIframe={"https://item-bleak-77544513.figma.site/"}
-                  title="Focus Enhancement App UI/UX Prototype - Preview"
-                  class="project-preview"
-                  loading="lazy"
-                ></iframe>
-              </div>
-            </article>
-            <article class="project project-full-width">
               <h3 class="title-case">NailEngineer — AI Nail Prep & Application Coach</h3>
               <p>
                 NailEngineer is an AI computer-vision tool that helps nail technicians sharpen their craft. Technicians upload photos of their work, and the model analyzes their prep and application technique, then returns clear, actionable feedback. By turning every upload into a personalized lesson, the tool teaches best practices and helps technicians improve the consistency, quality, and longevity of their nail work over time.
@@ -89,7 +74,22 @@
                 ></iframe>
               </div>
             </article>
-            <article class="project project-full-width">
+            <article class="project">
+              <h3 class="title-case">Focus Enhancement App</h3>
+              <p>
+                Explore a UI/UX prototype designed in Figma for a focus enhancement app grounded in behavioral psychology. This project explores how cognitive load, habit formation, and attention cues can be translated into thoughtful interface design to support sustained focus. Through intentional layout, interaction patterns, and feedback loops, the prototype aims to reduce distraction and encourage healthier productivity behaviors.
+              </p>
+              <a href="https://item-bleak-77544513.figma.site/" target="_blank" rel="noopener noreferrer" class="project-link">View project →</a>
+              <div class="preview-wrapper">
+                <iframe
+                  use:lazyIframe={"https://item-bleak-77544513.figma.site/"}
+                  title="Focus Enhancement App UI/UX Prototype - Preview"
+                  class="project-preview"
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </article>
+            <article class="project">
               <h3 class="title-case">Northwestern University International First-Generation Student Platform</h3>
               <p>
                 This is Northwestern's first-ever centralized web resource for international first-generation, low-income students.

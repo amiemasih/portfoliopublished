@@ -148,3 +148,50 @@ header h1 {
   transform-origin: top left;
   border: none;
 }
+
+/* --- Tablet: single-column projects --- */
+@media (max-width: 760px) {
+  body {
+    max-width: 100%;
+    margin: 12px auto;
+  }
+  header, #content {
+    padding: 20px 18px;
+  }
+  .projects {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+  }
+  .projects-section {
+    margin-top: 2.5rem;
+  }
+  .preview-wrapper {
+    min-height: 340px;
+  }
+}
+
+/* --- Phone: tighter type & spacing --- */
+@media (max-width: 480px) {
+  html { font-size: 58%; }
+  h1 { font-size: 3rem; }
+  h3 { font-size: 2.1rem; }
+  header, #content {
+    padding: 16px 14px;
+  }
+  #content p {
+    /* the glow box-shadow is heavy edge-to-edge on small screens */
+    box-shadow: 0 0 12px 6px rgba(196, 165, 116, 0.15);
+  }
+  .project {
+    padding: 1.2rem;
+  }
+  .preview-wrapper {
+    min-height: 260px;
+  }
+  /* Zoom the live previews out a touch more so more of the site fits */
+  .project-preview {
+    width: 333%;   /* 100% / 0.3 */
+    height: 333%;
+    transform: scale(0.3);
+  }
+}

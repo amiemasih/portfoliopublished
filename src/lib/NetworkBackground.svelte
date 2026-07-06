@@ -9,14 +9,15 @@
   const LINE_HEX = 0x8c827a;    // soft greige connections
   const FOG_HEX = 0xf1e9dc;     // mid-cream: distant elements dissolve into the page
 
-  // --- Network grid (in 3D world space) ---
-  const COLS = 44;
-  const ROWS = 26;
+  // --- Network grid (in 3D world space); density set per screen size in onMount ---
+  let COLS = 44;
+  let ROWS = 26;
   const PLANE_W = 48;
   const NEAR_Z = 10;
   const FAR_Z = -36;
   const WAVE_AMP = 1.7;
 
+  let isMobile = false;
   let reduceMotion = false;
 
   let containerRef;
@@ -141,7 +142,7 @@
   function buildScene() {
     const w = window.innerWidth;
     const h = window.innerHeight;
-    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    const dpr = Math.min(window.devicePixelRatio || 1, isMobile ? 1.5 : 2);
 
     scene = new THREE.Scene();
     scene.fog = new THREE.Fog(FOG_HEX, 16, 56);
@@ -303,6 +304,10 @@
 
   onMount(() => {
     reduceMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
+
+    // Lighter network on phones for smoothness / battery.
+    isMobile = window.innerWidth < 640;
+    if (isMobile) { COLS = 26; ROWS = 18; }
 
     buildNetwork();
     buildScene();
