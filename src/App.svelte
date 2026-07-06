@@ -1,5 +1,21 @@
 <script>
   import NetworkBackground from './lib/NetworkBackground.svelte';
+
+  // Only load a preview iframe once it scrolls near the viewport, so off-screen
+  // external sites don't render and eat CPU while you scroll.
+  function lazyIframe(node, src) {
+    const io = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          if (!node.src) node.src = src;
+          io.disconnect();
+          break;
+        }
+      }
+    }, { rootMargin: '300px' });
+    io.observe(node);
+    return { destroy() { io.disconnect(); } };
+  }
 </script>
 
 <NetworkBackground />
@@ -36,9 +52,10 @@
               <a href="https://cs333finalproject.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">View project →</a>
               <div class="preview-wrapper">
                 <iframe
-                  src="https://cs333finalproject.vercel.app/"
+                  use:lazyIframe={"https://cs333finalproject.vercel.app/"}
                   title="International Students in the USA - Preview"
                   class="project-preview"
+                  loading="lazy"
                 ></iframe>
               </div>
             </article>
@@ -50,9 +67,25 @@
               <a href="https://item-bleak-77544513.figma.site/" target="_blank" rel="noopener noreferrer" class="project-link">View project →</a>
               <div class="preview-wrapper">
                 <iframe
-                  src="https://item-bleak-77544513.figma.site/"
+                  use:lazyIframe={"https://item-bleak-77544513.figma.site/"}
                   title="Focus Enhancement App UI/UX Prototype - Preview"
                   class="project-preview"
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </article>
+            <article class="project project-full-width">
+              <h3 class="title-case">NailEngineer — AI Nail Prep & Application Coach</h3>
+              <p>
+                NailEngineer is an AI computer-vision tool that helps nail technicians sharpen their craft. Technicians upload photos of their work, and the model analyzes their prep and application technique, then returns clear, actionable feedback. By turning every upload into a personalized lesson, the tool teaches best practices and helps technicians improve the consistency, quality, and longevity of their nail work over time.
+              </p>
+              <a href="https://www.nailengineer.org/" target="_blank" rel="noopener noreferrer" class="project-link">View project →</a>
+              <div class="preview-wrapper">
+                <iframe
+                  use:lazyIframe={"https://www.nailengineer.org/"}
+                  title="NailEngineer - AI Nail Prep & Application Coach - Preview"
+                  class="project-preview"
+                  loading="lazy"
                 ></iframe>
               </div>
             </article>
