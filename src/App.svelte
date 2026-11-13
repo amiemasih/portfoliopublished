@@ -60,21 +60,6 @@
               </div>
             </article>
             <article class="project">
-              <h3 class="title-case">NailEngineer — AI Nail Prep & Application Coach</h3>
-              <p>
-                NailEngineer is an AI computer-vision tool that helps nail technicians sharpen their craft. Technicians upload photos of their work, and the model analyzes their prep and application technique, then returns clear, actionable feedback. By turning every upload into a personalized lesson, the tool teaches best practices and helps technicians improve the consistency, quality, and longevity of their nail work over time.
-              </p>
-              <a href="https://www.nailengineer.org/" target="_blank" rel="noopener noreferrer" class="project-link">View project →</a>
-              <div class="preview-wrapper">
-                <iframe
-                  use:lazyIframe={"https://www.nailengineer.org/"}
-                  title="NailEngineer - AI Nail Prep & Application Coach - Preview"
-                  class="project-preview"
-                  loading="lazy"
-                ></iframe>
-              </div>
-            </article>
-            <article class="project">
               <h3 class="title-case">Focus Enhancement App</h3>
               <p>
                 Explore a UI/UX prototype designed in Figma for a focus enhancement app grounded in behavioral psychology. This project explores how cognitive load, habit formation, and attention cues can be translated into thoughtful interface design to support sustained focus. Through intentional layout, interaction patterns, and feedback loops, the prototype aims to reduce distraction and encourage healthier productivity behaviors.
@@ -89,13 +74,29 @@
                 ></iframe>
               </div>
             </article>
-            <article class="project">
-              <h3 class="title-case">Northwestern University International First-Generation Student Platform</h3>
+                        <article class="project">
+              <h3 class="title-case">RackFlow</h3>
               <p>
-                This is Northwestern's first-ever centralized web resource for international first-generation, low-income students.
-                In collaboration with Northwestern's Undergraduate International Student Advancement Council, the Office of International Students, and the Financial Aid Office, this website aims to make navigating institutional resources clearer, faster, and more equitable. Designed around real student journeys, the platform surfaces relevant academic, immigration, and financial resources within just a few clicks. Explore Northwestern's Undergraduate International Student Advancement Council's mission here: <a href="https://www.instagram.com/uisacnu/" target="_blank" rel="noopener noreferrer">@uisacnu</a>
+                RackFlow is a platform for vintage and second-hand stores that automates inventory listing, tracking and selling. I’m building an AI agent that lets store owners run the platform by saying what they want, turning plain requests into inventory changes and API calls behind the scenes. Next it’ll read financial reports back to them, flag inventory errors and suggest what to do about them. Alongside that I fix UX bugs and ship them through the dev and production pipelines.
               </p>
-              <span class="project-link-coming-soon">Website link coming soon!</span>
+              <a href="https://rackflow.studio/preview/dashboard/DashboardPage" target="_blank" rel="noopener noreferrer" class="project-link">View project →</a>
+              <div class="preview-wrapper image-preview">
+                <a href="https://rackflow.studio/preview/dashboard/DashboardPage" target="_blank" rel="noopener noreferrer">
+                  <img src="/rackflow-preview.png" alt="RackFlow inventory dashboard preview" class="project-preview" loading="lazy" />
+                </a>
+              </div>
+            </article>
+            <article class="project">
+              <h3 class="title-case">Glimmr</h3>
+              <p>
+                Glimmr is a shoe charm brand, and I look after how the storefront looks and works. I designed and built a Diwali-themed interface to draw new customers in, and I handle the seasonal redesigns that follow. I also keep the inventory current and make every change that goes live.
+              </p>
+              <a href="https://shopglimmr.in/" target="_blank" rel="noopener noreferrer" class="project-link">View project →</a>
+              <div class="preview-wrapper image-preview glimmr-image-preview">
+                <a href="https://shopglimmr.in/" target="_blank" rel="noopener noreferrer">
+                  <img src="/glimmr-preview.png" alt="Glimmr Diwali storefront preview" class="project-preview" loading="lazy" />
+                </a>
+              </div>
             </article>
           </section>
         </div>

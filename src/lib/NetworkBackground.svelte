@@ -2,7 +2,7 @@
   import { onMount, onDestroy } from 'svelte';
   import * as THREE from 'three';
 
-  // --- Palette (neutral, matching NailEngineer: warm cream + muted taupe/greige) ---
+  // --- Palette (warm cream with muted taupe and greige) ---
   const NODE_HEXES = [0x9b9088, 0xb3a99e, 0x847a71, 0xa89d92, 0x6f665f];
   const HUB_HEX = 0xcdc2b4;     // idle hub tone (light greige)
   const PULSE_HEX = 0xb5946a;   // warm caramel — firing hubs + data pulses

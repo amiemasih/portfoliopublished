@@ -148,6 +148,29 @@ header h1 {
   transform-origin: top left;
   border: none;
 }
+.preview-wrapper.image-preview {
+  min-height: 0;
+  flex: initial;
+}
+.preview-wrapper.image-preview > a {
+  display: block;
+  line-height: 0;
+}
+.preview-wrapper.image-preview .project-preview {
+  position: static;
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: none;
+}
+.preview-wrapper.glimmr-image-preview {
+  aspect-ratio: 4 / 3;
+}
+.preview-wrapper.glimmr-image-preview .project-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /* --- Tablet: single-column projects --- */
 @media (max-width: 760px) {
